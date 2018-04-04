@@ -19,16 +19,17 @@ Module.prototype.init = function(handler, config) {
 };
 
 Module.prototype.requestInitialData = function() {
+  console.log("send!");
+    return "\r\n";
+};
+
+Module.prototype.resetProperty = function() {
+  console.log("send! property");
     return "\r\n";
 };
 
 Module.prototype.checkInitialData = function(data, config) {
-  if(this.sp != null && this.sp.isOpen())
-  {
-    this.sp.close();
-    this.sp = null;
-  }
-    return true;
+  return true;
 };
 
 Module.prototype.evevtContoller = function (state) {
