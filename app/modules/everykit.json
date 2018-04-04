@@ -1,0 +1,23 @@
+{
+    "id": "220101",
+    "name": {
+        "en": "EVERY KIT",
+        "ko": "에브리킷"
+    },
+    "platform": ["win32", "darwin"],
+    "icon": "everykit.png",
+    "module": "everykit.js",
+    "url": "http://everykit.io",
+    "select_com_port": false,
+    "entry": {
+  		"protocol": "json"
+  	},
+    "hardware": {
+        "type": "serial",
+        "control": "slave",
+        "duration": 1000,
+        "vendor": ["Microsoft","FTDI"],
+        "baudRate": 115200,
+        "firmwarecheck": false
+    }
+}
